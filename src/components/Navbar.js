@@ -13,7 +13,7 @@ export default function Navbar() {
 
     return (
         <nav className='navbar'>
-            <h2 className='logo'>Together</h2>
+            <h2 className='logo'>LOGOS</h2>
             <ul className='list' style={{transform: open ? 'translateY(0px)' : '' }}>
                 <li className='listItemFirst' data-aos='fade-in'>Where to?</li>
                 <Link to='/work'><li className='listItem' data-aos='fade-right'>Work</li></Link>
