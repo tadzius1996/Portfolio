@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Karla&display=swap');
+
+.logo {
+    font-family: 'Baloo 2', cursive;
+    color: #00122C;
+    z-index: 1000;
+}
+
+.navbar {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0.1px 5px 1px rgb(173, 158, 158);
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.listItem {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00122C;
+    cursor: pointer;
+}
+
+.listItemFirst {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6b7179;
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: 0.7rem;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+.listItem:hover {
+    color:rgb(182, 162, 182);
+}
+
+.burger {
+   width: 30px;
+   height: auto;
+   display: none;
+}
+
+@media (max-width: 768px) {
+
+    .burger {
+        width: 30px;
+        height: auto;
+        display: block;
+        z-index: 1000;
+        margin-right: 2rem;
+        cursor: pointer;
+     }
+
+    .logo {
+        font-family: 'Baloo 2', cursive;
+        color: #00122C;
+        z-index: 1000;
+        margin-left: 3rem;
+    }
+
+    .navbar {
+        height: 70px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0.1px 5px 1px rgb(173, 158, 158);
+        z-index: 10000;
+        width: 100%;
+    }
+
+    .list {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        position: fixed;
+        overflow: scroll;
+        background: #f0f3f7;
+        padding: 40px;
+        width: 100%;
+        z-index: 10;
+        transform: translateY(-700px);
+        transition: 0.5s ease-in-out;
+    }
+
+    .listItem {
+        font-family: 'Baloo 2', cursive;
+        font-size: 2.3rem;
+        color: #00122C;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .listItemFirst {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #6b7179;
+        cursor: pointer;
+        font-weight: 700;
+        margin-left: 0.7rem;
+        margin-bottom: 1rem;
+        display: block;
+        padding-top: 5rem;
+    }
+
+    .footer {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 15px;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: burlywood;
+        padding: 2rem;
+    }
+
+    .media {
+        margin-bottom: 5rem;
+        width: 100px;
+        height: auto;
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .list {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+}
