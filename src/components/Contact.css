@@ -1,0 +1,109 @@
+.contactContainer {
+    width: 550px;
+    height: 400px;
+    text-align: center;
+    background-color: #0d131c;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.contact-container {
+    position: relative;
+}
+
+.contactForm {
+    text-align: center;
+    padding: 3rem;
+    color: rgb(240, 230, 230)
+}
+
+.contact-title {
+    color: rgb(240, 230, 230);
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+
+}
+
+.contact-text {
+    width: 350px;
+    margin: auto;
+}
+
+.contact-btn {
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid rgb(240, 230, 230);
+    color: rgb(240, 230, 230);
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.contact-btn:hover {
+    background-color: rgb(240, 230, 230);
+    color: rgb(24, 22, 22);
+
+}
+
+.awesome {
+   font-size: 3rem;
+   margin-top: 2.5rem;
+   color: white;
+}
+
+.contacts {
+  
+  color: rgb(230, 211, 211);
+  font-size: 4rem;
+  margin-top: 3rem;
+  border-bottom: 1px solid rgb(230, 211, 211);
+  width: 100%;
+}
+
+.contact-form {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: rgb(240, 230, 230);
+    outline: none;
+}
+
+.contact-form:hover {
+    background-color: rgb(240, 230, 230);
+    color: rgb(24, 22, 22);
+
+}
+
+.rocket {
+    height: 600px;
+    width: auto;
+    position: absolute;
+    bottom: -6.5rem;
+    left: -15rem;
+    z-index: -1;
+}
+
+.starss {
+    height: 100px;
+    width: auto;
+    position: absolute;
+    bottom: 19rem;
+    right: 0rem;
+}
+
+.starss2 {
+    height: 80px;
+    width: auto;
+    position: absolute;
+    bottom: 2rem;
+    right: -5rem;
+}
+
+.starss3 {
+    height: 90px;
+    width: auto;
+    position: absolute;
+    bottom: 22rem;
+    right: 40%;
+    z-index: -1;
+}

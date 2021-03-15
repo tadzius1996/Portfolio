@@ -183,6 +183,23 @@
     width: 40%;
 }
 
+.footer-credit {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgb(230, 211, 211);
+    letter-spacing: 3px;
+    background-color: #0d131c;
+    padding: 1rem;
+    
+}
+
+.footer {
+    margin-top: 2rem;
+    width: 35%;
+    margin: auto;
+    height: 50px;
+}
+
 @media (max-width: 768px) {
 
     .container2 {

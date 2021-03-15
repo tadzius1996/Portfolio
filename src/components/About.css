@@ -1,0 +1,114 @@
+.aboutContainer {
+    margin-top: 11rem;
+    max-width: 1150px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.aboutText {
+    margin-top: 3rem;
+    float: right;
+}
+
+.imagee {
+    height: 300px;
+    width: auto;
+    margin-bottom: 4rem;
+    margin-top: 6rem;
+    z-index: 2;
+}
+
+.imagee:hover + .about-layover {
+    transform: translate(46px, -45px);
+}
+
+.AboutTitle {
+    color: rgb(230, 211, 211);
+    font-size: 4rem;
+    border-bottom: 1px solid rgb(230, 211, 211);
+}
+
+.aboutdescription {
+    color: white;
+    width: 400px;
+}
+
+.aboutdescription2 {
+    color: white;
+    width: 400px;
+    margin-top: 1.5rem;
+}
+
+.aboutList {
+    display: flex;
+
+}
+
+.aboutItem {
+    color: white;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+}
+
+.aboutItemFirst {
+    color: white;
+    padding-left: 0rem;
+    font-size: 0.8rem;
+}
+
+.about-layover {
+    z-index: 1;
+    background-color: #00122c;
+    width: 330px;
+    height: 330px;
+    position: absolute;
+    left: 13%;
+    margin-top: 8rem;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.about-layover:hover {
+    transform: translate(46px, -45px);
+}
+
+.planets {
+    position: absolute;
+    top: 75%;
+    width: 350px;
+    height: auto;
+    right: 5%;
+}
+
+.shooting {
+    position: absolute;
+    top: 75%;
+    width: 350px;
+    height: auto;
+    left: -11rem;
+}
+
+.shooting2 {
+    position: absolute;
+    top: 95%;
+    width: 450px;
+    height: auto;
+    left: -5rem;
+}
+
+.shooting3 {
+    position: absolute;
+    top: 5%;
+    width: 450px;
+    height: auto;
+    left: -10rem;
+}
+
+.shooting4 {
+    position: absolute;
+    top: 25%;
+    width: 250px;
+    height: auto;
+    right: -8rem;
+}

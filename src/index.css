@@ -1,7 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+  background-color: #141936;
+}
+
+.mainContainer {
+  max-width: 1050px;
+  margin: auto;
 }
 
 li {
@@ -13,7 +27,7 @@ a {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1150px;
   margin: auto;
 }
 
@@ -45,6 +59,21 @@ img {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+#man {
+  transform: scale(5);
+  animation: move 1s ease-in-out;
+}
+
+@keyframes move {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 @media (max-width: 768px) {
