@@ -19,7 +19,7 @@ export const HomeGrid = () => {
           <div className='projectsContainer'>
           <h1 className='gridTitle' data-aos='fade-up'>Projects</h1>
           <div className='projectHolder' data-aos='fade-up'>
-          <div className='project-frame'></div>
+          <div className='project-frame'><a href='https://commerce-website.herokuapp.com/'><img className='commerce' src='/commerce.PNG' /></a></div>
           <div className='projectDescription'>
             <h2 className='projectName'>E-COMMERCE WEBSITE</h2>
             <p className='projectText'>The website interface provides you with the ability of viewing different products (fetched from an external API). You can add your product to the cart and the price total will be calculated there. The website has a user authentication functionality. Once registered and logged in you are presented with a user dashboard where you're able to update account / shipping details and view your order list. </p>
