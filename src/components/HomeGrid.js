@@ -39,7 +39,7 @@ export const HomeGrid = () => {
             <a className='github' href='https://github.com/tadzius1996/e-commerce-website'><FaGithub /></a>
             </div>
             </div>
-            <div className='project-frame2'><a href='https://commerce-website.herokuapp.com/'><img className='commerce' src='/commerce.png' /></a></div>
+            <div className='project-frame2'><a href='https://commerce-website.herokuapp.com/'><img className='commerce' src='/commerce.PNG' /></a></div>
             </div>
           </div>
         </div>
