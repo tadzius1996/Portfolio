@@ -9,12 +9,16 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #141936;
 }
 
 .mainContainer {
-  max-width: 1050px;
+  max-width: 1150px;
   margin: auto;
 }
 
@@ -83,5 +87,7 @@ img {
     margin: 3rem;
     width: 800px;
   }
+
+  
 }
 

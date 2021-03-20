@@ -1,196 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
-.containerr {
-    height: 295px;
-    background-color: #00122c;
-    display: flex;
-    justify-content: space-around;
-}
 
-.container2 {
-    display: flex;
-    justify-content: space-around;
-}
-
-.footerText {
-    color: white;
-    font-family: 'Baloo 2', cursive;
-    font-size: 3rem;
-    font-weight: 100;
-}
-
-.button {
-    background: transparent;
-    border: 1px solid white;
-    border-radius: 5%;
-    width: 17rem;
-    height: 4rem;
-    color: white;
-    margin-left: 15rem;
-    transition: 0.2s ease-in-out;
-}
-
-.button:hover {
-    background: white;
-    color: #00122c;
-}
-
-.container3 {
-    background-color: #00122c;
-}
-  
-.container4 {
-    max-width: 1070px;
-    margin: auto;
-    background-color: #00122c;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-}
-
-.head {
-    padding-left: 4rem;
-}
-
-.heading {
-    font-family: 'Baloo 2', cursive;
-    font-weight: 100;
-    font-size: 2rem;
-}
-
-.subHeading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    line-height: 2rem;
-    margin-top: 1rem;
-    border-bottom: 1px solid rgb(197, 173, 173);
-    position: relative;
-    width: 150px;
-}
-
-.subHeading::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background: #758aa7;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 250ms ease-in;
-  }
-  
-  .subHeading:hover::after {
-            transform: scaleX(1);
-            transform-origin: left;
-  }
-
-.subHeading2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    line-height: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.listItems {
-    display: flex;
-    justify-content:flex-start;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 6rem;
-}
-
-.item {
-    margin-left: 1.5rem;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
-
-.item:hover {
-    color: rgb(230, 210, 210);
-}
-
-.input {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    margin-top: 1rem;
-    margin-right: 9rem;
-}
-
-.inputBar {
-    padding: 1.4rem;
-    width: 20rem;
-    margin-top: 1rem;
-    border-radius: 5px;
-}
-
-.inputBtn {
-    padding: 1.3rem;
-    width: 7rem;
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    border-radius: 5px;
-    margin-left: 1rem;
-    font-size: 1rem;
-    transition: 0.2s ease-in-out;
-}
-
-.inputBtn:hover {
-    background: white;
-    color: #00122c;
-}
-
-.lastHeading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    margin-top: 7rem;
-    width: 20%;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    width: 150px;
-}
-
-.lastHeading:hover {
-    color: rgb(216, 197, 197);
-}
-
-.lastHeading2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    margin-top: 7rem;
-    width: 20%;
-    font-size: 13px;
-    cursor: pointer;
-}
-
-.subHeadingLast {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    margin-top: 7rem;
-}
-
-.flex {
-    display: flex; 
-    margin-bottom: 7rem;
-   
-}
-
-.last {
-    display: flex;
-    justify-content: space-evenly;
-    width: 40%;
-}
 
 .footer-credit {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     color: rgb(230, 211, 211);
     letter-spacing: 3px;
     background-color: #0d131c;
     padding: 1rem;
-    
+    transition: 0.2s ease-in-out;
+}
+
+.footer-credit:hover {
+    color: rgb(250, 245, 245);
 }
 
 .footer {
@@ -198,181 +21,69 @@
     width: 35%;
     margin: auto;
     height: 50px;
+    position: relative;
 }
+
+.social-mediaa {
+    color: white;
+   
+    display: flex;
+    flex-direction: column;
+    background-color: #0d131c;
+    padding-right: 0.5rem;
+    z-index: 100;
+    display: none;
+  }
+
+  .social-mediaaa {
+    display: none;
+  }
 
 @media (max-width: 768px) {
-
-    .container2 {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .footerText {
-        color: white;
-        font-family: 'Baloo 2', cursive;
-        font-size: 2rem;
-        font-weight: 100;
-    }
-    
-    .button {
-        background: transparent;
-        border: 1px solid white;
-        border-radius: 5%;
-        width: 17rem;
-        height: 4rem;
-        color: white;
-        transition: 0.2s ease-in-out;
+    .footer {
+        margin-top: 2rem;
+        width: 35%;
         margin: auto;
-        margin-top: 1.5rem;
+        height: 50px;
+        display: none;
+        z-index: 1000000000;
     }
 
-    .listItems {
+    .social-mediaaa {
+        color: white;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-left: 20rem;
-        
-    }
+        flex-direction: row;
+        justify-content: center;
+        background-color: #141936;
+        z-index: 1000000000;
+        display: block;
+        text-align: center;
+      }
 
-    .item {
+      .social-mediaaa > li {
+        transition: 0.2s ease-in-out;
+        
+        
+      }
+
+      .social-mediaaa > li > a:hover {
+        color:#cebcbc;
+      }
+
+      .githubb {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 1.9rem;
+        color: white;
         cursor: pointer;
         transition: 0.2s ease-in-out;
-        margin-bottom: 1.5rem;
-    }
+      }
 
-    .container4 {
-        padding: 1rem;
-        background-color: #00122c;
-        color: white;
-    }
+      .githubb:hover {
+        color:rgb(207, 186, 186);
+      }
 
-    .heading {
-        font-family: 'Baloo 2', cursive;
-        font-weight: 100;
-        font-size: 1.6rem;
-    }
-
-    .form {
-        text-align: center;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    .input {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1rem;
-        margin-top: 10rem;
-        margin-right: 9rem;
-    }
-
-    .inputBar {
-        padding: 1.4rem;
-        width: 30rem;
-        margin-left: -12rem;
-        border-radius: 5px;
-    }
-    
-    .inputBtn {
-        height: 4rem;
-        width: 10rem;
-        background: transparent;
-        border: 1px solid white;
-        color: white;
-        border-radius: 5px;
-        margin-left: 1rem;
-        font-size: 1rem;
-        transition: 0.2s ease-in-out;
-        margin-top: 1.1rem;
-    }
-
-    .subHead {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .flex {
-        display: flex; 
-        margin-bottom: 7rem;
-       
-    }
-    
-    .last {
-        display: flex;
-        justify-content: space-evenly;
-        width: 40%;
-    }
-
-    .subHeadingLast {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1rem;
-        margin-top: 27rem;
-        margin-left: 17rem;
-        position: absolute;
-    }
+   
 }
 
-@media (max-width: 1000px) {
-
-    .head {
-        padding-left: 2rem;
-        
-    }
-    .input {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1rem;
-        margin-top: 15rem;
-        margin-right: 9rem;
-    }
-
-    .inputBar {
-        padding: 1.4rem;
-        width: 30rem;
-        margin-left: -12rem;
-        border-radius: 5px;
-        margin-top: 5rem;
-    }
-    
-    .inputBtn {
-        height: 4rem;
-        width: 10rem;
-        background: transparent;
-        border: 1px solid white;
-        color: white;
-        border-radius: 5px;
-        margin-left: 1rem;
-        font-size: 1rem;
-        transition: 0.2s ease-in-out;
-        margin-top: 5rem;
-    }
-
-    .heading {
-        font-family: 'Baloo 2', cursive;
-        font-weight: 100;
-        font-size: 1.6rem;
-    }
-
-    .form {
-        text-align: center;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    .subHeadingLast {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1rem;
-        margin-top: 24rem;
-        margin-left: 17rem;
-        position: absolute;
-    }
-}
-
-
-
-  
-  
-  

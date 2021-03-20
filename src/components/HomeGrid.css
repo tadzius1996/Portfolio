@@ -8,6 +8,7 @@
   to   { opacity: 1; }
 }
 
+
 .pre-title {
   color: rgb(240, 230, 230);
   font-family: 'Syne Mono', monospace;
@@ -31,20 +32,36 @@
   line-height: 25px;
   color: rgb(240, 230, 230);
   position: relative;
+  background-color: #0d131c;
+  width: 13rem;
+  padding: 1rem;
+  padding-bottom: 2.5rem;
 }
 
 .title-span {
   font-family: 'Syne Mono', monospace;
   font-weight: 100;
   font-size: 2rem;
+  margin-top: 6rem;
+  margin-left: 0.5rem;
+  color: rgb(206, 182, 182);
+}
+
+.title-flex {
+  display: flex;
+}
+
+.span {
+  font-size: 1rem;
 }
 
 .titlee {
-  margin-top: 5rem;
+  margin-top: 11rem;
+  margin-left: 2rem;
 }
 
 .titleLower {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-family: 'Titillium Web', sans-serif;
   line-height: 30px;
   color: #d8c1c1;
@@ -55,17 +72,19 @@
   background-color: transparent;
   font-size: 1.2rem;
   padding: 0.3rem;
-  border: 1px solid #d8c1c1;;
+  border: 3px dotted #d8c1c1;;
   margin-top: 2rem;
   color: #d8c1c1;
   width: 5.5rem;
   transition: 0.2s ease-in-out;
   outline: none;
+  z-index: 1000000000;
 }
 
 .mainButton:hover {
-  background-color: #d8c1c1;
-  color: #141936;
+  background-color: #0d131c;
+  color: #d8c1c1;
+  z-index: 1000000000;
 }
 
 .after {
@@ -79,17 +98,35 @@
 }
 
 .gridTitle {
-  color: rgb(230, 211, 211);
-  font-size: 4rem;
-  margin-top: 9.6rem;
-  border-bottom: 1px solid rgb(230, 211, 211);
+  color: #f0e6e6;
+  z-index: -1000;
+  font-size: 2.4rem;
+  width: 100%;
+  padding: 0.4rem;
+  
 }
 
 .projectsContainer {
   max-width: 1000px;
   margin: auto;
   overflow: hidden;
-  margin-top: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 11rem;
+}
+
+.project-div {
+  text-align: center;
+  background-color: #0d131c;
+  width: 25%;
+  margin: auto;
+  margin-top: 15rem;
+}
+
+.awesomee {
+  font-size: 4rem;
+  color: #f0e6e6;
+  margin-top: 1rem;
+ 
 }
 
 .grid {
@@ -368,6 +405,7 @@
   left: 2rem;
   top: 2rem;
   transition: 0.2s ease-in-out;
+  z-index: 10;
   
 }
 
@@ -379,7 +417,7 @@
 
 
 .project-frame {
-  margin-top: 5rem;
+  margin-top: 6rem;
   height: 280px;
   width: 507px;
   background-color: #00122c;
@@ -408,33 +446,38 @@
 }
 
 .projectDescription {
-  margin-top: 2rem;
+  margin-top: 5rem;
   width: 400px;
+  z-index: 100000;
 }
 
 .projectDescription2 {
   margin-top: 6rem;
   width: 400px;
+  z-index: 100000;
 }
 
 .projectText {
   margin-top: 3rem;
   background-color: #0d131c;
   padding: 1rem;
+  
 }
 
 .technologies {
-  margin-top: 0.7rem;
+  margin-top: 1.2rem;
   color: rgb(228, 215, 215);
+  
 }
 
 .projectName {
+  margin-top: -2rem;
   color: rgb(230, 211, 211);
   float: right;
 }
 
 .github {
-  
+  margin-top: 1rem;
   margin-left: 0.7rem;
   font-size: 1.5rem;
   color: white;
@@ -463,9 +506,8 @@
   display: flex;
   flex-direction: column;
   background-color: #0d131c;
-  padding-right: 1rem;
-  
-  
+  padding-right: 0.5rem;
+  z-index: 100;
  
 }
 
@@ -507,7 +549,7 @@
   opacity: 1;
   position: absolute;
   right: 5%;
-  top: 42%;
+  top: 44%;
 }
 
 .astroo {
@@ -529,7 +571,7 @@
   position: absolute;
   right: 30%;
   top: 61%;
-}
+  z-index: -100;}
 
 .string {
   width: 180px;
@@ -543,13 +585,39 @@
 }
 
 .shark4 {
-  width: 70px;
+  width: 50px;
   height: auto;
   color: black;
   opacity: 1;
   position: absolute;
-  left: 40%;
-  top: 55%;
+  left: 28%;
+  top: 17%;
+
+}
+
+.starsNew {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  left: 45%;
+  z-index: -100;
+}
+
+.shootingBalls {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  left: -4%;
+  z-index: -100;
+}
+
+.shootingBalls2 {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  left: 30%;
+  display: none;
+  z-index: -100;
 }
 
 .bubble {
@@ -564,17 +632,17 @@
 .shootingStars {
   position: absolute;
   top: 40%;
-  width: 450px;
+  width: 250px;
   height: auto;
-  left: 30rem;
+  left: 0rem;
 }
 
 .shootingStars2 {
   position: absolute;
-  top: 80%;
-  width: 450px;
+  top: 90%;
+  width: 250px;
   height: auto;
-  right: 30rem;
+  right: 0rem;
 }
 
 .homeContainer {
@@ -586,17 +654,359 @@
   animation: move 1s ease-in-out;
 }
 
-@keyframes move {
-  from {
-    transform: rotateZ(0deg);
+.email {
+  position: fixed;
+  left: -7rem;
+  bottom: 10rem;
+  transform: rotate(-90deg);
+  color: rgb(209, 186, 186);
+  font-family: 'Syne Mono', monospace;
+  font-size: 1.4rem;
+  background-color: #0d131c;
+  padding: 0.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+.email:hover {
+  color: rgb(211, 194, 194);
+}
+
+.commercee {
+  opacity: 0.8;
+  height: auto;
+  width: 450px;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 9rem;
+  position: relative;
+  margin-right: 2.9rem;
+  display: none;
+}
+
+@media (max-width: 1125px) {
+  .pre-title {
+    color: rgb(240, 230, 230);
+    font-family: 'Syne Mono', monospace;
+    font-size: 0.9rem;
+    background-color: #0d131c;
+    width: 212px;
+    text-align: center;
+    padding-top: 1.2rem;
+    padding-bottom: 6.5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    position: absolute;
+    margin-bottom: 3rem;
+    top: 23%;
+    left: 0;
   }
 
-  to {
-    transform: rotateZ(360deg);
+  .email {
+  position: fixed;
+  left: -7rem;
+  bottom: 10rem;
+  transform: rotate(-90deg);
+  color: rgb(209, 186, 186);
+  font-family: 'Syne Mono', monospace;
+  font-size: 1.4rem;
+  background-color: #0d131c;
+  padding: 0.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  z-index: 1000;
+  display: none;
+}
+
+.title {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 62px;
+  line-height: 25px;
+  color: rgb(240, 230, 230);
+  position: relative;
+  background-color: #0d131c;
+  width: 13rem;
+  padding: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.title-span {
+  font-family: 'Syne Mono', monospace;
+  font-weight: 100;
+  font-size: 1.7rem;
+  margin-top: 6rem;
+  margin-left: 0.5rem;
+  color: rgb(206, 182, 182);
+}
+
+.span {
+  font-size: 0.7rem;
+}
+
+.titleLower {
+  margin-top: 1rem;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 30px;
+  color: #d8c1c1;
+  font-weight: 100;
+}
+
+.mainButton {
+  background-color: transparent;
+  font-size: 1.1rem;
+  padding: 0.3rem;
+  border: 1px solid #d8c1c1;;
+  margin-top: 2rem;
+  color: #d8c1c1;
+  width: 5.5rem;
+  transition: 0.2s ease-in-out;
+  outline: none;
+}
+
+.astroo {
+  width: 250px;
+  height: auto;
+  color: black;
+  opacity: 1;
+  position: absolute;
+  right: 0%;
+  top: 55%;
+  z-index: -1;
+}
+
+
+
+.projectHolder {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  
+}
+
+.commerce {
+  opacity: 0.8;
+  height: 250px;
+  width: 467px;
+  cursor: pointer;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  transition: 0.2s ease-in-out;
+  
+}
+
+.project-frame {
+  margin-top: 5rem;
+  height: 260px;
+  width: 477px;
+  background-color: #00122c;
+  position: relative;
+}
+
+.project-frame2 {
+  margin-top: 9rem;
+  height: 280px;
+  width: 507px;
+  background-color: #00122c;
+  position: relative;
+}
+
+.projectHolder2 {
+  margin-bottom: 13rem;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.shark4 {
+  width: 50px;
+  height: auto;
+  color: black;
+  opacity: 1;
+  position: absolute;
+  left: 28%;
+  top: 18%;
+
+}
+
+.gridTitle {
+  color: #f0e6e6;
+  font-size: 2.4rem;
+  z-index: -1000;
+  width: 100%;
+  
+}
+
+.project-div {
+  text-align: center;
+  background-color: #0d131c;
+  width: 25%;
+  margin: auto;
+  margin-top: 15rem;
+}
+
+.awesomee {
+  font-size: 4rem;
+  margin-top: 1rem;
+  color: #f0e6e6;
+  
+ 
+}
+
+
+
+}
+
+@media (max-width: 1050px) {
+
+  .commerce {
+    opacity: 0.8;
+    height: 210px;
+    max-width: 377px;
+    cursor: pointer;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    transition: 0.2s ease-in-out;
+    
+  }
+  
+  .project-frame {
+    margin-top: 5rem;
+    height: 220px;
+    max-width: 387px;
+    min-width: 387px;
+    background-color: #00122c;
+    position: relative;
+  }
+
+  .projectHolder {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 8rem;
+    margin-right: 5rem;
+  }
+
+  .project-frame2 {
+    margin-top: 9rem;
+    height: 220px;
+    width: 417px;
+    background-color: #00122c;
+    position: relative;
+  }
+  
+  .projectHolder2 {
+    margin-bottom: 13rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 1rem;
+    margin-right: 5rem;
+  }
+
+  .projectName {
+    margin-top: -2rem;
+    color: rgb(230, 211, 211);
+    float: right;
+    font-size: 1.2rem;
+    margin-right: 7rem;
+  }
+
+  .projectText {
+    margin-top: 3rem;
+    background-color: #0d131c;
+    padding: 1rem;
+    width: 300px;
+    font-size: 0.9rem;
+    margin-right: 7rem;
+    
+  }
+  
+  .github {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .shark4 {
+    width: 50px;
+    height: auto;
+    color: black;
+    opacity: 1;
+    position: absolute;
+    left: 28%;
+    top: 17%;
+  
+  }
+
+  
+
+  
+}
+
+@media (max-width: 890px) {
+
+  .gridTitle {
+    color: #f0e6e6;
+    font-size: 2.4rem;
+    z-index: -1000;
+    width: 100%;
+    
+  }
+  
+  .project-div {
+    text-align: center;
+    background-color: #0d131c;
+    width: 30%;
+    margin: auto;
+    margin-top: 15rem;
+  }
+  
+  .awesomee {
+    font-size: 4rem;
+    margin-top: 1rem;
+    color: #f0e6e6;
+    
+   
   }
 }
 
+
+
 @media (max-width: 768px) {
+
+  .shark4 {
+    width: 50px;
+    height: auto;
+    color: black;
+    opacity: 1;
+    position: absolute;
+    left: 28%;
+    top: 18%;
+  
+  }
+
+  .astroo {
+    width: 250px;
+    height: auto;
+    color: black;
+    opacity: 1;
+    position: absolute;
+    right: 0%;
+    top: 60%;
+    z-index: -1;
+  }
 
   .grid {
     display: flex;
@@ -620,17 +1030,343 @@
     animation: fadein 2s;
   }
 
-  .title {
-    text-align: center;
+  .title-span {
+    font-family: 'Syne Mono', monospace;
+    font-weight: 100;
+    font-size: 1.4rem;
     margin-top: 6rem;
-    font-family: 'Baloo 2', cursive;
-    font-size: 52px;
-    line-height: 48px;
-    color: #00122C;
+    margin-left: 0.5rem;
+    color: rgb(206, 182, 182);
+    max-width: 350px;
+  }
+
+  .social-media {
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    right: 0rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #0d131c;
+    padding-right: 0.5rem;
+    z-index: 100;
+    display: none;
+   
+  }
+
+
+  .commerce {
+    opacity: 0.8;
+    height: auto;
+    max-width: 650px;
+    cursor: pointer;
+    margin: auto;
+    transition: 0.2s ease-in-out;
+    
+  }
+
+  .commercee {
+    opacity: 0.8;
+    height: auto;
+    width: 550px;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top: 9rem;
     position: relative;
+    margin-right: 2.9rem;
+    display: block;
+  }
+
+  .commercee:hover {
+    opacity: 0.9;
+   
+  }
+  
+  .project-frame {
+    margin-top: 5rem;
+    height: 320px;
+    max-width: 650px;
+    min-width: 387px;
+    background-color: #00122c;
+    position: relative;
+    text-align: center;
+    display: none;
+  }
+
+  .projectName {
+    margin-top: -2rem;
+    color: rgb(230, 211, 211);
+    float: right;
+    font-size: 1.2rem;
+    margin-right: 7rem;
+    position: absolute;
+    background-color: #0d131c;;
+    right: -8rem;
+    bottom: 0rem;
+    padding: 1rem;
+  }
+
+  .projectText {
+    background-color: #0d131c;
+    padding: 1rem;
+    max-width: 300px;
+    height: auto;
+    font-size: 0.8rem;
+    right: 5.5rem;
+    top: 3rem;
+    position: absolute;
+    
+  }
+  
+  .github {
+    margin-top: 1rem;
+    margin-left: 0.7rem;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  .github:hover {
+    transform: scale(1.1);
+  }
+  
+  .technologiesContainer {
+    position: absolute;
+    top: 2rem;
+    margin-bottom: 3rem;
+    right:30%;
+    display: flex;
+  }
+
+  .titlee {
+    margin-top: 9rem;
+    margin-left: 2rem;
+  }
+
+
+
+}
+
+@media (max-width: 710px) {
+  .project-div {
+    text-align: center;
+    background-color: #0d131c;
+    width: 35%;
+    margin: auto;
+    margin-top: 15rem;
   }
 
 }
+
+@media (max-width: 620px) {
+
+  .project-div {
+    text-align: center;
+    background-color: #0d131c;
+    width: 40%;
+    margin: auto;
+    margin-top: 15rem;
+  }
+
+  .astroo {
+    width: 250px;
+    height: auto;
+    color: black;
+    opacity: 1;
+    position: absolute;
+    right: 0%;
+    top: 60%;
+    z-index: -1;
+  }
+
+  .technologiesContainer {
+    position: absolute;
+    top: 2rem;
+    margin-bottom: 3rem;
+    right:25%;
+    display: flex;
+  }
+
+  .commercee {
+    opacity: 0.8;
+    height: auto;
+    width: 500px;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top: 9rem;
+    position: relative;
+    margin-right: 2.9rem;
+    display: block;
+  }
+
+  .projectName {
+    margin-top: -2rem;
+    color: rgb(230, 211, 211);
+    float: right;
+    font-size: 1rem;
+    margin-right: 7rem;
+    position: absolute;
+    background-color: #0d131c;;
+    right: -8rem;
+    bottom: 0rem;
+    padding: 1rem;
+  }
+
+  .projectText {
+    background-color: #0d131c;
+    padding: 1rem;
+    max-width: 300px;
+    height: auto;
+    font-size: 0.8rem;
+    right: 1.5rem;
+    top: 3rem;
+    position: absolute;
+    
+  }
+  
+  .title-span {
+    font-family: 'Syne Mono', monospace;
+    font-weight: 100;
+    font-size: 1.4rem;
+    margin-top: 6rem;
+    margin-left: 0.5rem;
+    color: rgb(206, 182, 182);
+    width: 170px;
+  }
+
+  .astroo {
+    width: 200px;
+    height: auto;
+    color: black;
+    opacity: 1;
+    position: absolute;
+    right: 0%;
+    top: 65%;
+    z-index: -1;
+  }
+
+  .shark4 {
+    width: 45px;
+    height: auto;
+    color: black;
+    opacity: 1;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+  }
+
+  .stars {
+    width: 450px;
+    height: auto;
+    color: black;
+    opacity: 1;
+    position: absolute;
+    right: 30%;
+    top: 65%;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .technologiesContainer {
+    position: absolute;
+    top: 2rem;
+    margin-bottom: 3rem;
+    right:20%;
+    display: flex;
+  }
+
+  .project-div {
+    text-align: center;
+    background-color: #0d131c;
+    width: 45%;
+    margin: auto;
+    margin-top: 15rem;
+  }
+
+  .commercee {
+    opacity: 0.8;
+    height: auto;
+    width: 450px;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top: 9rem;
+    position: relative;
+    margin-right: 2.9rem;
+    display: block;
+  }
+
+  .projectName {
+    margin-top: -2rem;
+    color: rgb(230, 211, 211);
+    float: right;
+    font-size: 1rem;
+    margin-right: 7rem;
+    position: absolute;
+    background-color: #0d131c;;
+    right: -8rem;
+    bottom: 0rem;
+    padding: 1rem;
+  }
+
+  .projectText {
+    background-color: #0d131c;
+    padding: 1rem;
+    max-width: 300px;
+    height: auto;
+    font-size: 0.8rem;
+    right: -2rem;
+    top: 3rem;
+    position: absolute;
+    
+  }
+
+  .astroo {
+    width: 200px;
+    height: auto;
+    color: black;
+    opacity: 1;
+    position: absolute;
+    right: 0%;
+    top: 65%;
+    z-index: -1;
+  }
+
+  .shark4 {
+    width: 35px;
+    height: auto;
+    color: black;
+    opacity: 1;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+  }
+
+
+}
+
+@media (max-width: 500px) {
+
+  .title-span {
+    font-family: 'Syne Mono', monospace;
+    font-weight: 100;
+    font-size: 1.4rem;
+    margin-top: 6rem;
+    margin-left: 0.5rem;
+    color: rgb(206, 182, 182);
+    width: 200px;
+  }
+
+}
+
+
+
+
 
 
 

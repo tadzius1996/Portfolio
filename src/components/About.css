@@ -4,6 +4,12 @@
     display: flex;
     justify-content: space-around;
     position: relative;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.title-span {
+    z-index: 100;
 }
 
 .aboutText {
@@ -12,8 +18,8 @@
 }
 
 .imagee {
-    height: 300px;
-    width: auto;
+    width: 300px;
+    height: auto;
     margin-bottom: 4rem;
     margin-top: 6rem;
     z-index: 2;
@@ -26,7 +32,7 @@
 .AboutTitle {
     color: rgb(230, 211, 211);
     font-size: 4rem;
-    border-bottom: 1px solid rgb(230, 211, 211);
+    border-bottom: 2px dotted rgb(230, 211, 211);
 }
 
 .aboutdescription {
@@ -112,3 +118,214 @@
     height: auto;
     right: -8rem;
 }
+
+.imagee2 {
+    display: none;
+}
+
+@media (max-width: 1050px) {
+
+    .aboutText {
+        margin-top: 3rem;
+        float: right;
+        margin-left: 3rem;
+        margin-right: 2rem;
+    }
+    
+    .imagee {
+        width: 250px;
+        height: auto;
+        margin-bottom: 4rem;
+        margin-top: 6rem;
+        z-index: 2;
+    }
+    
+    .about-layover {
+        z-index: 1;
+        background-color: #00122c;
+        width: 280px;
+        height: 310px;
+        position: absolute;
+        left: 6%;
+        margin-top: 5rem;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .AboutTitle {
+        color: rgb(230, 211, 211);
+        font-size: 4rem;
+        border-bottom: 2px dotted rgb(230, 211, 211);
+    }
+    
+    .aboutdescription {
+        color: white;
+        width: 400px;
+    }
+
+    .planets {
+        position: absolute;
+        top: 83%;
+        width: 350px;
+        height: auto;
+        right: 5%;
+    }
+
+}
+
+@media (max-width: 875px) {
+
+    .imagee {
+        width: 220px;
+        height: auto;
+        margin-bottom: 4rem;
+        margin-top: 6rem;
+        z-index: 2;
+    }
+    
+    .about-layover {
+        z-index: 1;
+        background-color: #00122c;
+        width: 220px;
+        height: 260px;
+        position: absolute;
+        left: 4%;
+        margin-top: 5rem;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .AboutTitle {
+        color: rgb(230, 211, 211);
+        font-size: 3rem;
+        border-bottom: 2px dotted rgb(230, 211, 211);
+    }
+    
+    .aboutdescription {
+        color: white;
+        width: 400px;
+    }
+    
+    .aboutdescription2 {
+        color: white;
+        width: 400px;
+        margin-top: 1.5rem;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+    .aboutdescription {
+        color: white;
+        margin: auto;
+        font-size: 1.2rem;
+        min-width: 470px;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        text-align:start;
+    }
+
+    .aboutItemFirst, .aboutItem, .aboutItemLast {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .AboutTitle {
+        color: rgb(230, 211, 211);
+        font-size: 3rem;
+        border-bottom: 2px dotted rgb(230, 211, 211);
+        margin-right: 2rem;
+        margin-left: 1rem;
+    }
+    
+    .aboutdescription2 {
+        color: white;
+        width: 400px;
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .imagee {
+        display: none;
+    }
+
+    .about-layover {
+        display: none;
+    }
+
+    .shrink-about {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .imagee2 {
+        width: 270px;
+        height: auto;
+        margin-bottom: 4rem;
+        margin-top: 7rem;
+        z-index: 2;
+        margin: auto;
+        display: block;
+    }
+
+    .aboutItemLast {
+        margin-bottom: 3rem;
+    }
+
+    .planets {
+        position: absolute;
+        top: 95%;
+        width: 350px;
+        height: auto;
+        right: 0%;
+    }
+
+    .shooting5 {
+        position: absolute;
+        top: 55%;
+        width: 250px;
+        height: auto;
+        right: 0rem;
+    }
+
+    .about-layoverr {
+        z-index: -1;
+        background-color: #00122c;
+        width: 270px;
+        height: 260px;
+        position:absolute;
+        top: 50%;
+        left: 22%;
+        margin-top: 5rem;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 620px) {
+    .aboutdescription {
+        color: white;
+        width: 100px;
+        margin: auto;
+        font-size: 1.2rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        text-align:start;
+    }
+
+    .aboutText {
+        margin-top: 3rem;
+        float: right;
+        margin-left: 4rem;
+        margin-right: 3.5rem;
+    }
+
+
+}
+
+
